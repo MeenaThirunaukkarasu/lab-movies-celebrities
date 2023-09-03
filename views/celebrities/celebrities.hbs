@@ -1,0 +1,28 @@
+<a class="nav" href="/">Home</a>
+<h2 class="celebrities-title">Celebrity List</h2>
+<br />
+<div class="list-container">
+  <p><strong>Name: </strong></p>
+  {{#each celebrities}}
+
+    <div class="celeb-list">
+      <div class="bio">
+
+        <a
+          class="each-celeb"
+          href="https://en.wikipedia.org/wiki/{{this.name}}"
+        >{{this.name}}</a>
+
+        <a class="edit-btn" href="/celebrities/{{_id}}/edit">Edit</a>
+      </div>
+      <div class="delete-btn-form">
+
+        <form action="/celebrities/{{_id}}/delete" method="POST">
+          <input class="delete-btn" type="submit" value="Delete" />
+        </form>
+      </div>
+
+    </div>
+
+  {{/each}}
+</div>

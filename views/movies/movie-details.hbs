@@ -1,0 +1,37 @@
+<a href="/movies">Back</a>
+
+<h2>Movie Details</h2>
+<div class="movie-detial-container">
+  <div class="movie-detail">
+
+    {{#with movie}}
+      <p class="movie-info"><strong>title: </strong>{{this.title}}</p>
+      <p></p>
+      <p class="movie-info"><strong>Genre: </strong>{{this.genre}}</p>
+
+      <p class="movie-info"><strong>Plot: </strong>{{this.plot}}</p>
+      <form action="/movies/{{this._id}}/delete" method="POST">
+        <label>
+
+          <input class="btn" type="submit" value="Delete" />
+        </label>
+      </form>
+      <a href="/movies/{{this._id}}/edit">Edit</a>
+
+    {{/with}}
+
+  </div>
+
+  <div class="actor-detail">
+
+    {{#each celebrities}}
+      <p><strong>Actor: </strong>{{name}}</p>
+      <p><strong>Occupation: </strong>{{occupation}}</p>
+      <p><strong>Phrase: </strong>{{catchphrase}}</p>
+    {{/each}}
+  </div>
+  <div>
+
+  </div>
+
+</div>

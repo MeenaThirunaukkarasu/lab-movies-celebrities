@@ -1,8 +1,117 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(209, 202, 190);
 }
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+/* /////NAV */
 
+.nav {
+  font-size: 18px;
+  cursor: pointer;
+}
 a {
   color: #00b7ff;
+}
+.title {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.tip {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6%;
+  color: rgb(146, 144, 144);
+}
+#create-celebrity {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(218, 196, 196, 0.69);
+  padding: 25px 100px 20px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px 0;
+  border: black solid;
+}
+.create-celeb-form {
+  /* margin: 0 auto; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.catchphrase-text {
+  padding-bottom: 50px;
+  width: 185px;
+  height: 70px;
+}
+label {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+input {
+  border: black solid;
+}
+.celeb-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.message-red {
+  color: rgb(234, 28, 9);
+}
+.message-green {
+  color: rgb(53, 198, 21);
+  margin-top: 20px;
+}
+.message-empty {
+  color: rgb(14, 14, 14);
+}
+/* //////CELEBRITYHBS */
+.celeb-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bio {
+  justify-content: start;
+  text-align: center;
+}
+.each-celeb {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.delete-btn-form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.edit-btn {
+  font-size: 18px;
+  margin-left: 20px;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.celebrities-title {
+  width: 80%;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10%;
 }
